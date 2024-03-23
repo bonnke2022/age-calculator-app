@@ -1,0 +1,149 @@
+@font-face {
+  font-family: "Poppins";
+  src: url(assets/fonts/Poppins-Regular.ttf) format("truetype");
+}
+:root {
+  --Purple: hsl(259, 100%, 65%);
+  --Light-red: hsl(0, 100%, 67%);
+
+  --White: hsl(0, 0%, 100%);
+  --Off-white: hsl(0, 0%, 94%);
+  --Light-grey: hsl(0, 0%, 86%);
+  --Smokey-grey: hsl(0, 1%, 44%);
+  --Off-black: hsl(0, 0%, 8%);
+  /* font family */
+  --ff-poppins: "Poppins";
+  /* font-weight */
+  --fw-500: 500;
+  --fw-600: 600;
+  --fw-700: 700;
+
+  /* font size */
+  --fs-320: 32px;
+}
+.ff-poppins {
+  font-family: var(--ff-poppins);
+}
+.fw-400 {
+  font-weight: var(--fw-400);
+}
+.fw-600 {
+  font-weight: var(--fw-700);
+}
+.fw-700 {
+  font-weight: var(--fw-700);
+}
+.fs-320 {
+  font-size: var(--fs-320);
+}
+.capitalize {
+  text-transform: capitalize;
+}
+.uppercase {
+  text-transform: uppercase;
+}
+.text-purple {
+  color: var(--Purple);
+}
+.text-black {
+  color: var(--Off-black);
+}
+.text-red {
+  color: var(--Light-red);
+}
+.text-gray {
+  color: var(--Smokey-grey);
+}
+.flex {
+  display: flex;
+  gap: 1rem;
+}
+img {
+  max-width: 100%;
+  display: block;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+}
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+  margin: 0;
+}
+
+p {
+  font-weight: var(--fw-500);
+}
+button,
+textarea,
+input {
+  font: inherit;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-weight: var(--fw-700);
+}
+body {
+  min-height: 100vh;
+  overflow-x: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--Light-grey);
+}
+.container {
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 375px;
+  padding: 2rem;
+  background: var(--White);
+  border-radius: 1.8rem;
+  border-bottom-right-radius: 8rem;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+.form-inputs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+.form-input {
+  width: 100px;
+  padding: 1rem;
+  border: 2px solid var(--Off-black);
+  font-size: 18px;
+  border-radius: 0.6rem;
+  outline: none;
+}
+.form-input:active,
+.form-input:hover {
+  border: 2.5px solid var(--Purple);
+}
+@media screen and (min-width: 800px) {
+  .container {
+    max-width: 1440px;
+  }
+  .form-control {
+    display: flex;
+    flex-direction: column;
+  }
+  .form-input {
+    width: 175px;
+  }
+}
