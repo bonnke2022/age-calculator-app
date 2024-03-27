@@ -18,6 +18,7 @@ const App = () => {
     if (!day || !month || !year) {
       toast.error("please provide value!");
       setError("This field is required!");
+      return;
     }
     setError("");
 
@@ -122,7 +123,7 @@ const App = () => {
         </div>
         <div className="btn-container">
           <hr />
-          <button className="btn" type="submit">
+          <button className="btn">
             <Arrow />
           </button>
         </div>
